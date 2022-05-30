@@ -108,15 +108,6 @@ cc_test(
     ],
 )
 
-
-cc_test(
-    name = "matchers",
-    srcs = ["matchers.cc"],
-    deps = [
-        "@com_google_googletest//:gtest_main",
-    ],
-)
-
 cc_test(
     name = "mocking_free_function",
     srcs = ["mocking_free_function.cc"],

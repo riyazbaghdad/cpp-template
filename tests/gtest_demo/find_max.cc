@@ -39,6 +39,6 @@ TEST(FindMax, AllZeros) {
   std::vector<int> inputs = {
       0, 0, 0, 0, 0, 0, 0,
   };
-  
+
   EXPECT_EQ(FindMax(inputs), 0);
 }

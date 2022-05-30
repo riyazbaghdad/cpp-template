@@ -32,6 +32,13 @@ new_local_repository(
     path = "/usr/local",
 )
 
+# Assuming zlib is installed in usr/local/opt/zlib/lib
+new_local_repository(
+    name = "zlib",
+    build_file = "third_party/zlib.BUILD",
+    path = "/usr/local/opt/zlib",
+)
+
 git_repository(
     name = "com_github_gflags_gflags",
     remote = "https://github.com/gflags/gflags.git",
