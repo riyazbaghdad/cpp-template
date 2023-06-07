@@ -29,6 +29,11 @@ TEST(FindMaxTest, FindMaxHandlesConsecutiveNumbers) {
   EXPECT_EQ(FindMax(inputs), 4);
 }
 
+TEST(FindMaxTest, FindMaxHandlesAllEquals) {
+  std::vector<int> inputs = {1, 1, 1, 1};
+  EXPECT_EQ(FindMax(inputs), 1);
+}
+
 TEST(FindMaxTest, FindMaxHandlesEmptyVector) {
   std::vector<int> inputs = {};
   EXPECT_EQ(FindMax(inputs), -1);

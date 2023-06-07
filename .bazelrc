@@ -32,3 +32,7 @@ build:msan --copt -g
 build:msan --linkopt -fsanitize=memory
 build:msan --sandbox_debug 
 build:msan --spawn_strategy=standalone
+
+#Gcov config
+build:gcov --copt -fprofile-arcs 
+build:gcov --copt -ftest-coverage

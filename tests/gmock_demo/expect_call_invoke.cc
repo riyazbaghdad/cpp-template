@@ -51,7 +51,7 @@ TEST(AtmMachine, CanWithdrawWithMultipleInvoke) {
   // Arrange
   const int account_number = 1234;
   const int withdraw_value = 1000;
-  const int number_of_calls = 10;
+  const int number_of_calls = 11;
 
   NiceMock<MockBankServer> mock_bankserver;
 
@@ -61,6 +61,7 @@ TEST(AtmMachine, CanWithdrawWithMultipleInvoke) {
       .WillOnce(Invoke(Square))
       .WillOnce(Square)
       .WillOnce(DoAll(InvokeWithoutArgs(PrintHello), Return(1000)))
+      .WillOnce(InvokeWithoutArgs(PrintHello))
       .WillOnce([](int n) { return Square(n); })
       .WillOnce([](int n) { return Sum(n, 1000); })
       .WillOnce([]() { return Return10000(); })

@@ -1,3 +1,7 @@
+/**
+ * Example to showcase TYPE_TEST in Google Test platform.
+ * By: Ari Saif
+ */
 #include <vector>
 
 #include "gtest/gtest.h"
