@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  cpp-template
+//  cpp-temp-proj
 //
 //  Created by Riyaz Baghdad on 24.08.23.
 //
